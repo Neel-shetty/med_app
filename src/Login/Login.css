@@ -1,0 +1,133 @@
+/* Following code has been commented with appropriate comments for your reference. */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styles for the main container */
+.container {
+    max-width: 900px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 40px; /* Padding inside the container */
+    margin-top: 10%; /* Top margin of 10% */
+}
+
+/* Styles for the login grid layout */
+.login-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for login text elements */
+.login-text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-text h2 {
+    color: #0d213f;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-text a {
+    text-decoration: none;
+}
+
+/* Styles for login form */
+.login-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Styles for form groups */
+.form-group {
+    margin-bottom: 20px; /* Bottom margin for spacing between form groups */
+}
+
+/* Styles for form group labels */
+.form-group label {
+    display: block; /* Make labels display as block elements */
+    margin-bottom: 5px; /* Bottom margin for spacing below labels */
+    font-weight: bold; /* Bold text for labels */
+    color: #0d213f;
+}
+
+/* Styles for form controls */
+.form-control {
+    width: 100%; /* Width of form controls */
+    padding: 10px; /* Padding inside form controls */
+    font-size: 16px; /* Font size of form controls */
+    border: 1px solid #ccc; /* Border around form controls */
+    border-radius: 4px; /* Border radius for rounded corners */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3685fb;
+}
+
+/* Styles for button groups */
+.btn-group {
+    margin-top: 20px; /* Top margin for spacing above button groups */
+    margin-bottom: 20px; /* Bottom margin for spacing below button groups */
+    display: flex;
+    gap: 10px;
+}
+
+/* Styles for buttons */
+.btn {
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 16px; /* Font size of buttons */
+    border: none; /* No border for buttons */
+    border-radius: 4px; /* Border radius for rounded corners on buttons */
+    cursor: pointer; /* Cursor style on hover for buttons */
+    transition: all 0.3s ease;
+}
+
+/* Styles for primary buttons */
+.btn-primary {
+    background-color: #007bff; /* Background color for primary buttons */
+    color: #fff; /* Text color for primary buttons */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for danger (red) buttons */
+.btn-danger {
+    background-color: #dc3545; /* Background color for danger buttons */
+    color: #fff; /* Text color for danger buttons */
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin-top: 5%;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
